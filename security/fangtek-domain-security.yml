@@ -1,0 +1,43 @@
+generated: '2026-07-20'
+method: probed
+source: dig + curl probe of fangtek.com.cn (2026-07-20)
+notes: >-
+  The registered domain resolves, but no reachable web service was observed from
+  the probe location. HTTPS terminates with a TLS "unrecognized_name" (SNI) alert
+  and plain HTTP returns an empty reply. No mail or email-authentication records
+  are published. Absence of records is recorded data, not an inferred failure.
+hosts:
+  - host: fangtek.com.cn
+    resolves: true
+    a: [154.220.7.201]
+    https: false
+    https_error: TLSV1_ALERT_UNRECOGNIZED_NAME
+    http_status: null
+    http_error: empty reply from server
+    tls_version: null
+    hsts: null
+  - host: www.fangtek.com.cn
+    resolves: true
+    a: [154.220.7.201]
+    https: false
+    https_error: TLSV1_ALERT_UNRECOGNIZED_NAME
+    http_status: null
+    http_error: empty reply from server
+    tls_version: null
+    hsts: null
+domains:
+  - domain: fangtek.com.cn
+    nameservers: [n1.xundns.com, n2.xundns.com]
+    dnssec: false
+    caa: []
+    mx: []
+    spf: false
+    dmarc: false
+    dmarc_policy: null
+well_known:
+  - {path: /.well-known/security.txt, status: null, error: connection failed}
+  - {path: /.well-known/openid-configuration, status: null, error: connection failed}
+  - {path: /.well-known/oauth-authorization-server, status: null, error: connection failed}
+  - {path: /.well-known/api-catalog, status: null, error: connection failed}
+  - {path: /.well-known/ai-plugin.json, status: null, error: connection failed}
+  - {path: /llms.txt, status: null, error: connection failed}

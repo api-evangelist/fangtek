@@ -1,19 +1,59 @@
 aid: fangtek
-name: fangtek
-description: fangtek is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fangtek.png
+name: FangTek
+description: >-
+  FangTek (Shanghai Fangtek Electronics Co., Ltd.) is a Chinese fabless
+  semiconductor company headquartered in Shanghai. It designs highly integrated
+  analog and mixed-signal integrated circuits for mobile phones, portable devices
+  and consumer electronics, with a product line spanning audio power amplifiers,
+  voice and audio processing, image processing, LED drivers, power management
+  ICs, analog switches and DC boost converters. Qiming Venture Partners lists
+  FangTek in its portfolio as "a leading provider of highly integrated circuit
+  solutions for cell phone, portable device, voice processing, audio processing
+  and image processing." FangTek is a silicon component vendor that reaches
+  customers through electronics distributors; it publishes no public developer
+  platform, web API, SDK or machine-readable API surface, so this profile carries
+  identity and domain-security data only.
 url: https://raw.githubusercontent.com/api-evangelist/fangtek/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - qiming
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api-surface
+x-notes: >-
+  Enrichment 2026-07-20: identity confirmed against the Qiming Venture Partners
+  portfolio listing, which links FangTek to http://www.fangtek.com.cn/chinese/.
+  The domain resolves (154.220.7.201) but no reachable web service was observed
+  from the probe location - HTTPS fails SNI and HTTP returns an empty reply - so
+  the corporate site could not be crawled. No GitHub organization, package
+  registry presence, or developer documentation was found. No API artifacts were
+  created; none exist to harvest.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Semiconductors
+- Integrated Circuits
+- Analog
+- Mixed Signal
+- Audio
+- Power Management
+- Consumer Electronics
+- Hardware
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +62,11 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://fangtek.com.cn
+  url: http://www.fangtek.com.cn/
+- type: DomainSecurity
+  url: security/fangtek-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
