@@ -40,7 +40,7 @@ x-notes: >-
   the corporate site could not be crawled. No GitHub organization, package
   registry presence, or developer documentation was found. No API artifacts were
   created; none exist to harvest.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 tags:
